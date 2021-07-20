@@ -32,3 +32,24 @@ try:
 except Exception as e:
     # Some logging if you want
     raise e
+	
+# FINALLY CLAUSE
+# The code which is wrapped in the finally clause will run whether or not an exception occurred. It might be used to perform clean-up after a script.
+try:
+    file = open('test.txt', 'rb')
+except IOError as e:
+    print('An IOError occurred. {}'.format(e.args[-1]))
+finally:
+    print("This would be printed in every case whether the exception occurs or not")
+
+# TRY/ELSE CLAUSE
+# if EXCEPTION is occurs the try then except block will execute otherwish else block will execute
+try:
+    print('I am sure no exception is going to occur!')
+except Exception:
+    print('exception')
+else:
+    print('This would only run if no exception occurs)
+finally:
+    print('This would be printed in any case.')
+
