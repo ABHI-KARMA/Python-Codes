@@ -1,3 +1,4 @@
+# average of array
 def average(array):
     set1 = set(array)
     sum = 0
@@ -11,3 +12,14 @@ if __name__ == '__main__':
     arr = list(map(int, input().split()))
     result = average(arr)
     print(result)
+
+# length of set
+n = int(input())
+l = []
+for i in range(0,n):
+    j = input()
+    l.append(j)
+    
+s = set(l)
+le = len(s)
+print(le)
